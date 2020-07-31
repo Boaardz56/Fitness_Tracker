@@ -45,7 +45,9 @@ const workoutSchema = new Schema({
     }
    }
   ] 
-});
+},
+//look up virtuals properties!
+);
 
 const Workout = mongoose.model("Workout", workoutSchema);
 
