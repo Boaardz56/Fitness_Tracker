@@ -5,6 +5,6 @@ With this fitness tracker, the user will be able to track their cardio and resis
 ## Application Uses
 * MongoDB 
 * Javascript
-[Heroku](https://infinite-brushlands-41444.herokuapp.com/)
+* [Heroku-Depolyment](https://infinite-brushlands-41444.herokuapp.com/)
 
 ![Fitness-Tracker](/public/assets/FitnessGIF.gif)
