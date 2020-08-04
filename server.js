@@ -26,6 +26,19 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb",
 app.use(require("./routes/apiRoutes.js"));
 app.use(require("./routes/htmlRoutes.js"));
 
+
+//mongoose
+mongoose.Promise = global.Promise;
+//connect to mongo db
+mongoose.connect(
+  process.env.MONGOD_URI ||
+  "mongodb://root:root123@ds139781.mlab.com:39781/heroku_b4jxfkcg",
+  {
+    useMongoClient: true
+  }
+);
+
+
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
